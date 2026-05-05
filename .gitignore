@@ -1,0 +1,16 @@
+.env
+data/pdfs/
+data/vectorstore/
+data/parsed_papers.json
+data/chunks.json
+data/bm25_index.pkl
+data/bm_25_index.pkl
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+.ipynb_checkpoints/
+*.log
