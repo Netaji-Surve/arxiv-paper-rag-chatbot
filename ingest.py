@@ -35,7 +35,7 @@ if __name__ == "__main__":
     print(f"{len(chunks)} chunks created created total.")
 
 
-    collection = embed_and_index(chunk_path="./data/chunks.json",
+    collection = embed_and_index(chunks_path="./data/chunks.json",
                     chroma_dir="./data/vectorstore",
                     batch_size=100,
                     embedding_model_name="sentence-transformers/all-MiniLM-L6-v2")

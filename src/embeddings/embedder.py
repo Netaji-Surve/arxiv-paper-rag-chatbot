@@ -1,66 +1,63 @@
-import chromadb
 import json
-from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
+from langchain_chroma import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_core.documents import Document
 
-COLLECTION_NAME = 'arxiv_papers'
 
-def embed_and_index(chunks_path: str='./data/chunks.json',
-                    chroma_dir: str='./data/vectorstore',
-                    embedding_model_name: str='sentence-transformers/all-MiniLM-L6-v2',
-                    batch_size: int = 100) -> chromadb.Collection:
-    # load chunks
-    loaded_chunks = load_chunks(chunk_path=chunks_path)
+COLLECTION_NAME = "arxiv_paper"
 
-    # embedding model
-    embedding_model = SentenceTransformerEmbeddingFunction(model_name = embedding_model_name)
 
-    # init chromadb
-    client = chromadb.PersistentClient(path=chroma_dir)
-    collection = client.get_or_create_collection(name=COLLECTION_NAME,
-                                    embedding_function=embedding_model,
-                                    metadata={"hnsw:space": "cosine"})
+def embed_and_index(
+    chunks_path: str = "./data/chunks.json",
+    chroma_dir: str = "./data/vectorstore",
+    embedding_model_name: str = "sentence-transformers/all-MiniLM-L6-v2",
+    batch_size: int = 100,
+) -> Chroma:
+    loaded_chunks = load_chunks(chunks_path)
 
-    existing_ids = set(collection.get()['ids'])
+    embeddings = HuggingFaceEmbeddings(model_name=embedding_model_name)
 
-    new_chunks = [c for c in loaded_chunks if c['chunk_id'] not in existing_ids]
+    vectorstore = Chroma(
+        collection_name=COLLECTION_NAME,
+        embedding_function=embeddings,
+        persist_directory=chroma_dir,
+    )
+
+    existing_ids = set(vectorstore.get()["ids"])
+    new_chunks = [c for c in loaded_chunks if c["chunk_id"] not in existing_ids]
 
     if not new_chunks:
-        print(f'all the chunks are already indexed. skipping indexing process.')
-        return collection
-    
-    for i in range (0, len(new_chunks), batch_size):
-        chunk_batch = new_chunks[i: i+batch_size]
-        collection.add(
+        print("All chunks already indexed. Skipping.")
+        return vectorstore
 
-            ids=[c['chunk_id'] for c in chunk_batch],
+    print(f"Indexing {len(new_chunks)} new chunks (skipping {len(existing_ids)} existing)...")
 
-            metadatas=[
-                {
-                    "arxiv_id": c["arxiv_id"],
-                    "title": c["title"],
-                    "authors": ", ".join(c["authors"]),
-                    "published": c["published"],
-                    "page": c["page"],
-                    "chunk_index": c["chunk_index"]
-                }
-                for c in chunk_batch ],
+    docs = [
+        Document(
+            page_content=c["chunk_text"],
+            metadata={
+                "arxiv_id": c["arxiv_id"],
+                "title": c["title"],
+                "authors": ", ".join(c["authors"]),
+                "published": c["published"],
+                "page": c["page"],
+                "chunk_index": c["chunk_index"],
+            },
+        )
+        for c in new_chunks
+    ]
+    ids = [c["chunk_id"] for c in new_chunks]
 
-            documents=[c['chunk_text'] for c in chunk_batch]
-            )
-        
-    print(f"total indexed chunks: {collection.count()}")
-    return collection
+    for i in range(0, len(docs), batch_size):
+        vectorstore.add_documents(docs[i : i + batch_size], ids=ids[i : i + batch_size])
 
-def load_chunks(chunk_path) -> list[dict]:
-    loaded_chunks = []
+    print(f"Total indexed: {vectorstore._collection.count()}")
+    return vectorstore
+
+
+def load_chunks(chunk_path: str) -> list[dict]:
     try:
-        with open(chunk_path, 'r') as f:
-            loaded_chunks = json.load(f)
-        return loaded_chunks
+        with open(chunk_path, "r") as f:
+            return json.load(f)
     except Exception as e:
-        print(f"Exception while loading chunks: {e}")
         raise RuntimeError(f"Exception while loading chunks: {e}")
-    
-
-
-         
