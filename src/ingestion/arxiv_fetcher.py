@@ -22,7 +22,6 @@ class PaperMetadata:
 
 SEARCH_TOPICS = [
     "large language models",
-    "retrieval augmented generation",
     "transformer architecture",
     "diffusion models image generation",
     "instruction tuning fine-tuning LLM",

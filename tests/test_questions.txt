@@ -1,0 +1,31 @@
+Based on the 8 AI/ML topics your papers cover:
+
+RAG & Retrieval
+
+How does retrieval augmented generation reduce hallucinations in large language models?
+What is the difference between sparse and dense retrieval in RAG systems?
+How does FAISS enable efficient similarity search over large document collections?
+
+Instruction Fine-tuning & RLHF
+4. What is instruction fine-tuning and how does it differ from standard pre-training?
+5. How does reinforcement learning from human feedback align language models with human preferences?
+6. What role does the reward model play in RLHF training?
+
+Diffusion Models
+7. How do diffusion models generate images through the denoising process?
+8. What is classifier-free guidance and how does it improve image quality in diffusion models?
+
+Reasoning & Prompting
+9. How does chain-of-thought prompting improve multi-step reasoning in LLMs?
+10. What is the difference between zero-shot and few-shot chain-of-thought prompting?
+
+Transformers & Attention
+11. How does the self-attention mechanism in transformers capture long-range dependencies?
+12. What problem does positional encoding solve in the transformer architecture?
+
+Efficient Fine-tuning
+13. How does LoRA reduce the number of trainable parameters during fine-tuning?
+14. What is the intuition behind parameter-efficient fine-tuning methods like prefix tuning?
+
+General
+15. What are the main challenges in evaluating large language model outputs?

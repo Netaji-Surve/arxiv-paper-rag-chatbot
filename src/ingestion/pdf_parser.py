@@ -1,8 +1,7 @@
-import fitz
 import json
 import os
 from pathlib import Path
-from tqdm import tqdm
+from langchain_community.document_loaders import PyMuPDFLoader
 
 
 def parse_pdfs(
@@ -12,7 +11,7 @@ def parse_pdfs(
     papers = _load_metadata(metadata_path)
     parsed = []
 
-    for paper in tqdm(papers, desc="Parsing PDFs", unit="paper"):
+    for paper in papers:
         pdf_path = paper.get("pdf_path")
         if not pdf_path or not os.path.exists(pdf_path):
             print(f"  Skipping {paper['arxiv_id']} — PDF not found")
@@ -50,21 +49,20 @@ def _load_metadata(path: str) -> list[dict]:
 def _extract_text(pdf_path: str) -> list[dict]:
     pages = []
     try:
-        doc = fitz.open(pdf_path)
-        for page_num, page in enumerate(doc, start=1):
-            text = page.get_text("text")
-            text = _clean(text)
+        docs = PyMuPDFLoader(pdf_path).load()
+        for doc in docs:
+            text = _clean(doc.page_content)
             if len(text) > 100:  # skip near-blank pages
-                pages.append({"page": page_num, "text": text})
-        doc.close()
+                pages.append({
+                    "page": doc.metadata.get("page", 0) + 1,  # PyMuPDF is 0-indexed
+                    "text": text,
+                })
     except Exception as e:
         print(f"  Error reading {pdf_path}: {e}")
     return pages
 
 
 def _clean(text: str) -> str:
-    # fix hyphenated line breaks (e.g. "trans-\nformer" → "transformer")
     text = text.replace("-\n", "")
-    # collapse multiple blank lines
     lines = [l for l in text.splitlines() if l.strip()]
     return " ".join(lines)

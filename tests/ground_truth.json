@@ -1,0 +1,62 @@
+[
+  {
+    "question": "How does retrieval augmented generation reduce hallucinations in large language models?",
+    "reference": "RAG reduces hallucinations by grounding the LLM's response in retrieved documents from an external knowledge base. Instead of relying solely on parametric memory, the model generates answers conditioned on retrieved context, which constrains it to factual information present in the documents."
+  },
+  {
+    "question": "What is the difference between sparse and dense retrieval in RAG systems?",
+    "reference": "Sparse retrieval methods like BM25 use exact keyword matching with TF-IDF style term frequencies and work well for precise keyword queries. Dense retrieval uses neural embeddings to capture semantic similarity, enabling retrieval based on meaning rather than exact terms. Hybrid approaches combine both for better coverage."
+  },
+  {
+    "question": "How does FAISS enable efficient similarity search over large document collections?",
+    "reference": "FAISS enables efficient similarity search by using approximate nearest neighbor algorithms, including inverted file indexes and product quantization, to avoid exhaustive pairwise comparisons. It partitions the vector space into clusters and searches only the most relevant partitions, significantly reducing search time at scale."
+  },
+  {
+    "question": "What is instruction fine-tuning and how does it differ from standard pre-training?",
+    "reference": "Instruction fine-tuning trains a pre-trained language model on datasets of instruction-output pairs to make it follow natural language instructions. Unlike pre-training which optimizes next-token prediction on raw text, instruction fine-tuning teaches the model to respond helpfully to diverse task descriptions and user requests."
+  },
+  {
+    "question": "How does reinforcement learning from human feedback align language models with human preferences?",
+    "reference": "RLHF first trains a reward model on human preference comparisons between model outputs, then fine-tunes the language model using PPO to maximize the reward signal. This process aligns the LLM's behavior with human values such as helpfulness, harmlessness, and honesty by directly optimizing for human-preferred responses."
+  },
+  {
+    "question": "What role does the reward model play in RLHF training?",
+    "reference": "The reward model is a neural network trained on human preference data to score how good a model's response is. It takes a prompt and response as input and outputs a scalar reward. During RL fine-tuning, this reward signal guides the policy model to generate responses that humans prefer, acting as a proxy for human judgment."
+  },
+  {
+    "question": "How do diffusion models generate images through the denoising process?",
+    "reference": "Diffusion models generate images by learning to reverse a forward noising process. During training, Gaussian noise is progressively added to images. During inference, the model starts from pure noise and iteratively denoises using a learned neural network, predicting and removing noise at each step until a clean image is recovered."
+  },
+  {
+    "question": "What is classifier-free guidance and how does it improve image quality in diffusion models?",
+    "reference": "Classifier-free guidance trains the diffusion model both conditionally and unconditionally by randomly dropping the conditioning signal during training. At inference, the model's output is interpolated between conditional and unconditional predictions using a guidance scale, amplifying the conditioning effect to improve sample quality and adherence to the prompt."
+  },
+  {
+    "question": "How does chain-of-thought prompting improve multi-step reasoning in LLMs?",
+    "reference": "Chain-of-thought prompting encourages LLMs to produce intermediate reasoning steps before arriving at a final answer. By including examples that show step-by-step reasoning in the prompt, the model learns to decompose complex problems, reducing errors in arithmetic, commonsense, and symbolic reasoning tasks."
+  },
+  {
+    "question": "What is the difference between zero-shot and few-shot chain-of-thought prompting?",
+    "reference": "Few-shot chain-of-thought provides examples of questions with explicit reasoning steps in the prompt to guide the model. Zero-shot chain-of-thought uses a simple trigger phrase like 'Let's think step by step' without any examples, relying on the model's pre-trained ability to generate reasoning chains spontaneously."
+  },
+  {
+    "question": "How does the self-attention mechanism in transformers capture long-range dependencies?",
+    "reference": "Self-attention allows each token to directly attend to all other tokens in the sequence by computing query, key, and value projections. Attention scores are computed as scaled dot products between queries and keys, enabling the model to capture relationships between distant tokens without the sequential bottleneck of RNNs."
+  },
+  {
+    "question": "What problem does positional encoding solve in the transformer architecture?",
+    "reference": "Since transformers process all tokens in parallel without inherent order, positional encoding injects information about each token's position in the sequence. Sinusoidal or learned embeddings are added to token embeddings so the model can distinguish between tokens at different positions and understand sequential structure."
+  },
+  {
+    "question": "How does LoRA reduce the number of trainable parameters during fine-tuning?",
+    "reference": "LoRA freezes the pre-trained model weights and injects low-rank decomposition matrices into each weight matrix. Instead of updating the full weight matrix W, it learns two small matrices A and B where the update is the product AB. This reduces trainable parameters by orders of magnitude while preserving model quality."
+  },
+  {
+    "question": "What is the intuition behind parameter-efficient fine-tuning methods like prefix tuning?",
+    "reference": "Prefix tuning prepends trainable continuous vectors to the input of each transformer layer while keeping the model weights frozen. The model learns to use these virtual tokens as soft prompts that steer its behavior for a specific task, achieving task adaptation without modifying any of the original model parameters."
+  },
+  {
+    "question": "What are the main challenges in evaluating large language model outputs?",
+    "reference": "Key challenges include the lack of a single ground truth for open-ended tasks, difficulty in measuring factual accuracy and hallucinations, sensitivity to prompt phrasing, limited coverage of automatic metrics like BLEU and ROUGE, and the high cost of human evaluation. LLM-as-judge approaches help but introduce their own biases."
+  }
+]

@@ -1,0 +1,582 @@
+[
+  {
+    "question": "What are the five aspects of recent advances in video-text VLP models that the survey paper reviews?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2202.09061v4_p18_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "VLP: A Survey on Vision-Language Pre-training"
+  },
+  {
+    "question": "What are the funding sources that supported the research work mentioned in this passage?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2504.13684v1_p6_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation"
+  },
+  {
+    "question": "What is the purpose of the study reported in \"R. Who is chatgpt? benchmarking llms\u2019 psychological portrayal using psychobench, 2024\"?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2402.14679v2_p5_c5",
+        "grade": 2
+      }
+    ],
+    "source_title": "Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality"
+  },
+  {
+    "question": "What is the main difference between the zero-shot CoT approach and the few-shot CoT method in terms of input provided to the model?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2410.03595v1_p18_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "Understanding Reasoning in Chain-of-Thought from the Hopfieldian View"
+  },
+  {
+    "question": "What are the three main contributions of this research in terms of image representation and dataset development?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2303.09295v1_p2_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "DIRE for Diffusion-Generated Image Detection"
+  },
+  {
+    "question": "What is the title of the paper by H. Touvron et al., which was published in CVPR and introduced the Llama 2 model?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2403.04279v2_p18_c7",
+        "grade": 2
+      }
+    ],
+    "source_title": "Controllable Generation with Text-to-Image Diffusion Models: A Survey"
+  },
+  {
+    "question": "What is the specific contribution of LooseControl [167] to the control mechanism, and how does it enable the creation of complex environments?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2403.04279v2_p8_c4",
+        "grade": 2
+      }
+    ],
+    "source_title": "Controllable Generation with Text-to-Image Diffusion Models: A Survey"
+  },
+  {
+    "question": "What is the specific optimization technique used by DGL to implement the LSTM-based Gather in GraphSAGE?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2009.00804v2_p3_c6",
+        "grade": 2
+      }
+    ],
+    "source_title": "Architectural Implications of Graph Neural Networks"
+  },
+  {
+    "question": "What conference did Seungone Kim and his co-authors publish their work \"Cotever: Chain of thought prompting annotation toolkit for explanation verification\" in?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2410.03595v1_p13_c2",
+        "grade": 2
+      }
+    ],
+    "source_title": "Understanding Reasoning in Chain-of-Thought from the Hopfieldian View"
+  },
+  {
+    "question": "What are the two pre-trained text-to-image generation models used to fine-tune in the FAiD approach?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2506.06962v3_p16_c2",
+        "grade": 2
+      }
+    ],
+    "source_title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation"
+  },
+  {
+    "question": "What types of tasks did the researchers evaluate the Vision-and-Language Models (VLMs) on, as mentioned in the comparative analysis?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2404.07214v4_p2_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "Exploring the Frontier of Vision-Language Models: A Survey of Current Methodologies and Future Directions"
+  },
+  {
+    "question": "What is the name of the math word problems benchmark mentioned in the passage as an example of arithmetic reasoning skills?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2410.03595v1_p17_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "Understanding Reasoning in Chain-of-Thought from the Hopfieldian View"
+  },
+  {
+    "question": "What is the specific technique used to enhance multi-hop reasoning in large language models, as proposed by Zeping Yu, Yonatan Belinkov, and Sophia Ananiadou in their 2025 paper?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2503.09567v5_p99_c0",
+        "grade": 2
+      }
+    ],
+    "source_title": "Towards Reasoning Era: A Survey of Long Chain-of-Thought for Reasoning Large Language Models"
+  },
+  {
+    "question": "What type of human feedback did James MacGlashan and his team use in their interactive learning approach?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "1808.04096v1_p9_c2",
+        "grade": 2
+      }
+    ],
+    "source_title": "Directed Policy Gradient for Safe Reinforcement Learning with Human Advice"
+  },
+  {
+    "question": "What is the purpose of concatenating the vectors of adjacent patches in the formation of the h-hop surrounding patch representation?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2506.06962v3_p4_c0",
+        "grade": 2
+      }
+    ],
+    "source_title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation"
+  },
+  {
+    "question": "What are the limitations of staged designs in integrating task-specific labels and refining localization, as described in [16]?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2508.19294v2_p21_c0",
+        "grade": 2
+      }
+    ],
+    "source_title": "Object Detection with Multimodal Large Vision-Language Models: An In-depth Review"
+  },
+  {
+    "question": "What are the specific components that make up the LLaVA-Architecture, and how do they interact with each other during the vision-language pre-training phase?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2402.11690v1_p4_c4",
+        "grade": 2
+      }
+    ],
+    "source_title": "Vision-Flan: Scaling Human-Labeled Tasks in Visual Instruction Tuning"
+  },
+  {
+    "question": "What is the key difference between human respondents and LLM in their responses to multiple prompts with similar meanings?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2402.14679v2_p12_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality"
+  },
+  {
+    "question": "Which personality trait does the author describe as making it challenging for you to complete tasks on time?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2402.14679v2_p10_c2",
+        "grade": 2
+      }
+    ],
+    "source_title": "Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality"
+  },
+  {
+    "question": "What is the primary application area where RAG was originally developed, according to the passage?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2506.06962v3_p9_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation"
+  },
+  {
+    "question": "What are the two types of mechanisms mentioned in this passage for controlling text-to-image models with novel conditions?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2403.04279v2_p6_c0",
+        "grade": 2
+      }
+    ],
+    "source_title": "Controllable Generation with Text-to-Image Diffusion Models: A Survey"
+  },
+  {
+    "question": "What type of conditions are injected in ResNet Blocks to enhance the spatially rich information in the image-form data?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2403.04279v2_p13_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "Controllable Generation with Text-to-Image Diffusion Models: A Survey"
+  },
+  {
+    "question": "What approach does the author suggest for handling conflicts between different alignment criteria in InstructGPT's training?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2407.17482v2_p18_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "Reinforcement Learning from Human Feedback: Whose Culture, Whose Values, Whose Perspectives?"
+  },
+  {
+    "question": "What traditional machine learning methods have been replaced by deep learning architectures in object detection tasks?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2508.19294v2_p26_c8",
+        "grade": 2
+      }
+    ],
+    "source_title": "Object Detection with Multimodal Large Vision-Language Models: An In-depth Review"
+  },
+  {
+    "question": "What are the two methods used in this study to examine the reliability of LLMs' responses systematically?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2402.14679v2_p7_c2",
+        "grade": 2
+      }
+    ],
+    "source_title": "Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality"
+  },
+  {
+    "question": "What is the role of an attention mechanism in the object detection and localization process, as described in the passage?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2508.19294v2_p5_c4",
+        "grade": 2
+      }
+    ],
+    "source_title": "Object Detection with Multimodal Large Vision-Language Models: An In-depth Review"
+  },
+  {
+    "question": "What is the assumed shape of SAM banks in this research?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2412.20486v2_p11_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "LSQCA: Resource-Efficient Load/Store Architecture for Limited-Scale Fault-Tolerant Quantum Computing"
+  },
+  {
+    "question": "What is the percentage of correct animal identification for the German name in comparison to the scientific name, according to the results presented?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2504.11108v2_p9_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "Benchmarking Vision Language Models on German Factual Data"
+  },
+  {
+    "question": "What is the current research focus of Feilong Chen, as mentioned in this passage?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2202.09061v4_p30_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "VLP: A Survey on Vision-Language Pre-training"
+  },
+  {
+    "question": "What is the name of the large language model introduced by Jun Chen, Deyao Zhu, and et al. in their 2023 paper?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2404.07214v4_p15_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "Exploring the Frontier of Vision-Language Models: A Survey of Current Methodologies and Future Directions"
+  },
+  {
+    "question": "What is the method proposed by W. Bradley Knox and Peter Stone in their 2010 paper to combine manual feedback with subsequent MDP reward signals for reinforcement learning?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "1808.04096v1_p9_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "Directed Policy Gradient for Safe Reinforcement Learning with Human Advice"
+  },
+  {
+    "question": "What is the minimum quantity of GPT-4 synthesized data required to align VLMs' responses with human preferences, according to the MM-Bench study?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2402.11690v1_p3_c0",
+        "grade": 2
+      }
+    ],
+    "source_title": "Vision-Flan: Scaling Human-Labeled Tasks in Visual Instruction Tuning"
+  },
+  {
+    "question": "What is the adaptive module introduced by DiffuseKronA that surpasses LoRA-DreamBooth in parameter efficiency and stability?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2403.04279v2_p7_c0",
+        "grade": 2
+      }
+    ],
+    "source_title": "Controllable Generation with Text-to-Image Diffusion Models: A Survey"
+  },
+  {
+    "question": "What is the name of the company mentioned in this marketing project expense recommendation?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2402.11690v1_p35_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "Vision-Flan: Scaling Human-Labeled Tasks in Visual Instruction Tuning"
+  },
+  {
+    "question": "What are the inherent challenges of LVLMs that need to be addressed for their wider adoption and optimization in practical object detection environments?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2508.19294v2_p20_c5",
+        "grade": 2
+      }
+    ],
+    "source_title": "Object Detection with Multimodal Large Vision-Language Models: An In-depth Review"
+  },
+  {
+    "question": "What is the key idea of the authors' work, and how do they differentiate between diffusion-generated images and real images?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2303.09295v1_p4_c3",
+        "grade": 2
+      }
+    ],
+    "source_title": "DIRE for Diffusion-Generated Image Detection"
+  },
+  {
+    "question": "What are the three main approaches to multimodal Long CoT mentioned in this passage?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2503.09567v5_p32_c5",
+        "grade": 2
+      }
+    ],
+    "source_title": "Towards Reasoning Era: A Survey of Long Chain-of-Thought for Reasoning Large Language Models"
+  },
+  {
+    "question": "What is the \"stage-wise context scaling\" method used in the Fastcurl system to achieve efficient training of r1-like reasoning models?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2503.09567v5_p80_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "Towards Reasoning Era: A Survey of Long Chain-of-Thought for Reasoning Large Language Models"
+  },
+  {
+    "question": "What was the primary limitation of this research that hindered the creation of realistic and diverse training data for the conversational model?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2501.05032v2_p7_c2",
+        "grade": 2
+      }
+    ],
+    "source_title": "Enhancing Human-Like Responses in Large Language Models"
+  },
+  {
+    "question": "What mechanism does the authors propose to enable effective error correction in their reformulation of CoT reasoning?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2601.03559v2_p9_c1",
+        "grade": 2
+      }
+    ],
+    "source_title": "DiffCoT: Diffusion-styled Chain-of-Thought Reasoning in LLMs"
+  },
+  {
+    "question": "What are the underlying limitations of conventional approaches to natural language understanding, as indicated by the results presented across all three passages?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2405.11357v3_p9_c0",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2405.11357v3_p8_c0",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2405.11357v3_p11_c3",
+        "grade": 1
+      }
+    ],
+    "source_title": "Large Language Models Lack Understanding of Character Composition of Words"
+  },
+  {
+    "question": "What is the main reason for the recommendation in Passage 1 to set a larger Ttrunc value, such as 100, before applying DPM-Solver++ for further reduction, and how does this affect the model's performance?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2410.19288v1_p9_c4",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2410.19288v1_p8_c1",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2410.19288v1_p4_c0",
+        "grade": 1
+      }
+    ],
+    "source_title": "A Flow-based Truncated Denoising Diffusion Model for Super-resolution Magnetic Resonance Spectroscopic Imaging"
+  },
+  {
+    "question": "What is the primary objective of this research, and how does it differ from existing approaches to automating literature reviews?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2411.18583v1_p1_c3",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2411.18583v1_p2_c0",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2411.18583v1_p2_c1",
+        "grade": 1
+      }
+    ],
+    "source_title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation"
+  },
+  {
+    "question": "What are the key research questions proposed by the authors to study the influence of personality factors on human-AI interaction, and how do these questions relate to their proposed framework for modeling human feedback as personal, contextual, and dynamic?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2206.13316v1_p2_c6",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2206.13316v1_p1_c4",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2206.13316v1_p1_c3",
+        "grade": 1
+      }
+    ],
+    "source_title": "Humans are not Boltzmann Distributions: Challenges and Opportunities for Modelling Human Feedback and Interaction in Reinforcement Learning"
+  },
+  {
+    "question": "What is the allowed range for the baryon asymmetry parameter \u03b7B, and how does it relate to the need for special initial conditions or fundamental parameters in order to explain the observed baryon asymmetry?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "1801.10059v1_p7_c0",
+        "grade": 2
+      },
+      {
+        "chunk_id": "1801.10059v1_p21_c1",
+        "grade": 1
+      },
+      {
+        "chunk_id": "1801.10059v1_p36_c0",
+        "grade": 1
+      }
+    ],
+    "source_title": "Is The Universal Matter - Antimatter Asymmetry Fine Tuned?"
+  },
+  {
+    "question": "What are the key cognitive challenges identified in knowledge augmentation, and how do these insights inform the design considerations for integrating context-aware reasoning into LLM-based systems, as described in the paper?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2504.13684v1_p7_c3",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2504.13684v1_p2_c3",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2504.13684v1_p6_c1",
+        "grade": 1
+      }
+    ],
+    "source_title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation"
+  },
+  {
+    "question": "What are the key differences in model training and evaluation methods used by the authors to investigate the impact of incorporating diffusion into CoT reasoning, as compared to their previous experiments on other benchmarks?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2601.03559v2_p15_c2",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2601.03559v2_p13_c0",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2601.03559v2_p7_c2",
+        "grade": 1
+      }
+    ],
+    "source_title": "DiffCoT: Diffusion-styled Chain-of-Thought Reasoning in LLMs"
+  },
+  {
+    "question": "What are the main objectives and approaches of the two vision-language pre-training (VLP) models, Vision-Language Contrastive Learning (VLC) and Im2text, and how do they align vision and language, as described in the paper?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2202.09061v4_p23_c0",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2202.09061v4_p8_c2",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2202.09061v4_p16_c0",
+        "grade": 1
+      }
+    ],
+    "source_title": "VLP: A Survey on Vision-Language Pre-training"
+  },
+  {
+    "question": "What is the purpose of this study, and how do the researchers plan to investigate the alignment between an LLM's claimed personality traits and its actual behavior in real-world scenarios?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2402.14679v2_p1_c4",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2402.14679v2_p1_c3",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2402.14679v2_p7_c2",
+        "grade": 1
+      }
+    ],
+    "source_title": "Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality"
+  },
+  {
+    "question": "What are the key advancements and improvements made in text-to-image diffusion models, such as architecture optimization and versatile use, and how do they relate to the evolution of DALL-E models?",
+    "relevant_chunks": [
+      {
+        "chunk_id": "2303.07909v3_p5_c0",
+        "grade": 2
+      },
+      {
+        "chunk_id": "2303.07909v3_p11_c2",
+        "grade": 1
+      },
+      {
+        "chunk_id": "2303.07909v3_p11_c0",
+        "grade": 1
+      }
+    ],
+    "source_title": "Text-to-image Diffusion Models in Generative AI: A Survey"
+  }
+]

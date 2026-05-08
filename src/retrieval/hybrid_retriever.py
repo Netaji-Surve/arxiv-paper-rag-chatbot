@@ -8,6 +8,7 @@ from langchain_core.documents import Document
 COLLECTION_NAME = "arxiv_paper"
 
 
+
 def build_hybrid_retriever(
         chunk_path: str = "./data/chunks.json",
         chroma_dir: str = "./data/vectorstore",
@@ -15,6 +16,7 @@ def build_hybrid_retriever(
         top_k: int = 5,
         weights: list[float] = [0.5, 0.5]
         ):
+    print('building hybrid retriever.')
     chunks = _load_chunks(chunk_path)
 
     docs = _chunks_to_documents(chunks)
@@ -25,6 +27,7 @@ def build_hybrid_retriever(
         retrievers=[dense_retriever, sparse_retriever],
         weights=weights
     )
+    hybrid_retriever_instance = hybrid_retriever
     return hybrid_retriever
 
 def _load_chunks(chunk_path) -> list[dict]:
@@ -59,3 +62,10 @@ def _chunks_to_documents(chunks):
                 "chunk_id": c["chunk_id"],
             },) for c in chunks]
     return docs
+
+
+hybrid_retriever_instance = build_hybrid_retriever()
+
+
+def get_hybrid_retriever():
+    return hybrid_retriever_instance

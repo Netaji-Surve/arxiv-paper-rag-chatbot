@@ -1,0 +1,12 @@
+/* Target all Chainlit step elements by ID pattern */
+[id^="step-"],
+[id^="step-"] * {
+    font-size: 0.3rem !important;
+    line-height: 1.4 !important;
+}
+
+/* User query message text */
+[role="article"] {
+    font-size: 0.5rem !important;
+    line-height: 1.6 !important;
+}
